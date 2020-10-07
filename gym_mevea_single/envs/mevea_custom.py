@@ -536,9 +536,9 @@ class MevMultiProc:
 
         if self.render == True:
             # Create cmd command
-            command = 'MeveaSolver.exe /mvs  {}'.format(path_to_file)
+            command = 'MeveaSolver.exe /mvs  "{}"'.format(path_to_file)
         else:
-            command = 'MeveaSolver.exe /headless /mvs  {}'.format(path_to_file)
+            command = 'MeveaSolver.exe /headless /mvs  "{}"'.format(path_to_file)
 
         #self.process = subprocess.Popen(command, shell=False)
 
