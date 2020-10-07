@@ -532,13 +532,13 @@ class MevMultiProc:
     def start_process(self):
         
         # Create path of the file
-        path_to_file = str(self.sim_path) + '\..\{}.mvs'.format(self.model_name)
+        path_to_file = '"' + str(self.sim_path) + '\..\{}.mvs'.format(self.model_name) + '"'
 
         if self.render == True:
             # Create cmd command
-            command = 'MeveaSolver.exe /mvs  "{}"'.format(path_to_file)
+            command = 'MeveaSolver.exe /mvs  {}'.format(path_to_file)
         else:
-            command = 'MeveaSolver.exe /headless /mvs  "{}"'.format(path_to_file)
+            command = 'MeveaSolver.exe /headless /mvs  {}'.format(path_to_file)
 
         #self.process = subprocess.Popen(command, shell=False)
 
