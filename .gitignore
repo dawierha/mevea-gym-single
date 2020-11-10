@@ -1,4 +1,5 @@
-__pycache__
-gym_mevea_single/tutorial_model/Scripts/__pycache__
+__pycache__/
+gym_mevea_single/tutorial_model/Scripts/config.json
 gym_mevea_single/tutorial_model/LOG
 gym_mevea_single/tutorial_model/*.xml
+gym_mevea_single/tutorial_model/TaskResults*
